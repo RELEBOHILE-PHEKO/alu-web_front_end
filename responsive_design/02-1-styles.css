@@ -176,6 +176,46 @@ a:active {
     clip: rect(1px, 1px, 1px, 1px);
     white-space: nowrap;
 }
+main img {
+    width: 100%;
+    height: auto;
+}
+
+/* Section Latest news */
+@media (max-width: 767px) {
+    .section-latest-news .row {
+        flex-direction: column;
+    }
+}
+
+/* Grid section */
+@media (max-width: 767px) {
+    :root {
+        --section-padding: 5rem 1.5rem;
+        --section-body-padding: 2rem 0 0;
+    }
+
+    ul.row {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .row {
+        margin: 0 0 3rem 0;
+    }
+
+    [class*='col-'] {
+        width: 100%;
+    }
+}
+
+/* Navbar section */
+@media (max-width: 767px) {
+    .navbar-menu {
+        display: none;
+    }
+}
+
 
 /*** 2. LAYOUT ***/
 
@@ -183,7 +223,7 @@ a:active {
     ============================= */
 
 .container {
-    width: 960px;
+    max-width: 960px;
     margin-left: auto;
     margin-right: auto;
 }
